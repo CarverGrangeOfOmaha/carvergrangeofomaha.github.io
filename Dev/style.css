@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background: white;
+}
+
+#logo {
+    height: 15vh;
+    margin-top: .3vh;
+    margin-left: 1.5vw;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;     
+}   
+
+nav {
+    background: #4a4d99;
+    
+    
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #cca536;
+}
+
+a.fb {
+    background: url(fb.png) no-repeat center;
+    background-size: 50%;
+}
+
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li{
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: inline-flex;
+    }
+    
+    nav li {
+        flex: 1 1 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .social {
+        margin: 0;
+    }
+}
+
+#main {
+    height: 30vh;
+    background-image: url(carvergrangebackgroundSMALL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#title {
+    font-family: serif;
+    font-size: 10vmin;
+    font-weight: 100;
+    color: white;
+    margin-top: 5vh;
+    margin-left: -500px;
+    text-shadow: 2px 2px black;
+}
+
+#subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 6vmin;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-left: -171px;
+}
+
+#logline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3vmin;
+    color: white;
+    margin-top: 30vh;
+    text-shadow: 2px 2px black;
+    margin-right: -500px;
+}
+
+.container .titles .btn btn-default {
+    color:aqua;
+    background-color: aqua;
+    
+}
+
+
+
+
+
+
+
+.wrapper {
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    border: 1px solid #49fb35;
+}
+
+.box {
+    height: 200px;
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+.one {
+    flex-grow: 1;
+}
+
+.one {
+    background: #cca536;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+
+
+
+
+
