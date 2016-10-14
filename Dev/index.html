@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Practice Site</title>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="desktop.css">
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -9,11 +10,11 @@
     </head>
     
     <body>
-        <header>
-            <div class="wrapper">
-                <nav>
-                    <a href="index.html"><img id="logo" src="grange.png" /></a>
+        <div id="space"></div>
+        <nav class="wrapper">
+            <a href="index.html"><img id="logo" src="grange.png" /></a>
                     <ul>
+                        <li><a href="">Carver Grange<br /> Of Omaha</a></li>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Events</a></li>
@@ -22,27 +23,25 @@
                         <li><a href="">Join</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
-                
-                    <ul class="social">
-                        <li><a href="" class="fb">Facebook</a></li>
-                    </ul>
+            <div id="social">
+            <a href=""><div id="fbox">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div></a>
+            <a href=""><div id="tbox">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div></a>
+            </div>
                 </nav>
-            </div>
-        </header>
         <div class="space"></div>
-        <div class="vid">
-                <video autoplay="true" loop>
-                    <source src="video.mp4" type="video/mp4">             
-                </video>
+        <div class="container">
+            <div id="text">
+            <h1>Carver Grange<br />of Omaha</h1>
+            <h2>Where STEM education is cultivated with an interest in agriculture.(Science, Technology, Engineering and Mathematics)</h1>
             </div>
-            <div class="text">Carver Grange</div>
-            <div class="text2">of Omaha</div>
-            <div class="text3">Where STEM education is cultivated with an interest in agriculture.</div>
-            <div class="text4">(Science, Technology, Engineering and Mathematics)</div>
-        </div>
+                <video autoplay="true" loop>
+                <source src="video.mp4" type="video/mp4"></video>
+            </div>
         <br/>
-        <div class="footer">
-            <footer>Footer</footer>        
-        </div>
+            <footer></footer>
     </body>
 </html>
