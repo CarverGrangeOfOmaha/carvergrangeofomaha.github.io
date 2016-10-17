@@ -117,6 +117,7 @@ li a:hover {
     position: absolute;
     background: rgba(255,255,255,0.2);
     font-family: sans-serif;
+    border-radius: 10px;
 }
 
 h1 {
@@ -142,6 +143,7 @@ h3 {
     position: absolute;
     background: rgba(255,255,255,0.2);
     font-family: sans-serif;
+    border-radius: 10px;
 }
 
 img { 
@@ -174,8 +176,85 @@ video {
     z-index: 1;
 }
 
+ #main {
+        min-height: 800px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+        margin-top: -6px;
+    }
+ 
+    #main > article {
+        margin: 0px;
+        padding: 0px;
+        background: white;
+        border: groove;
+        border-width: medium;
+        flex: 3 1 60%;
+        order: 2;
+        box-shadow: 10px black;
+    }
+
+    #main > nav2 {
+        margin: 0px;
+        padding: 0px;
+        background: #cca536;
+        flex: 1 6 10%;
+        order: 1;
+        text-align: center;
+    }
+
+nav2 > a:link, a:visited {
+    background-color: #4a4d99;
+    color: white;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav2 > a:hover, a:active {
+    background: rgba(255,255,255,0.2);
+}
+
+    #main > aside {
+        background: #cca536;
+        margin: 0px;
+        padding: 0px;
+        flex: 1 6 10%;
+        order: 3;
+    }
+
+    #mainAboutpage {
+        min-height: 800px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+        margin-top: -6px;
+    }
+
+   #one {
+        margin: 0px;
+        padding: 0px;
+        background: #dddd88;
+        flex: 3 1 60%;
+        order: 2;
+    }
+
+
 footer {
         display: block;
         min-height: 100px;
         background: #4a4d99;
+        color: white;
+        font-family: sans-serif;
+        font-size: 1em;
+        text-align: center;    
 }
