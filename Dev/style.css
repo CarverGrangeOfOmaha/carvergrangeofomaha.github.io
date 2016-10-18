@@ -128,6 +128,14 @@ h1 {
     z-index: 1;
 }
 
+h2 {
+    color: white;
+    margin: 20px;
+    margin-left: 450px;
+    margin-top: -68px;
+    
+}
+
 h3 {
     color: white;
     margin: 20px;
@@ -166,6 +174,7 @@ h2 {
 h4 {
     color: white;
     margin: 10px;
+    margin-top: -2px;
 }
     
 video {
@@ -176,6 +185,10 @@ video {
     z-index: 1;
 }
 
+
+/*main*/
+
+
  #main {
         min-height: 800px;
         margin: 0px;
@@ -183,70 +196,190 @@ video {
         display: flex;
         flex-flow: row;
         margin-top: -6px;
+        background-image: url("goldback.jpg");
+        width: 100%;
     }
  
     #main > article {
-        margin: 0px;
-        padding: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        padding: 10px;
         background: white;
         border: groove;
         border-width: medium;
-        flex: 3 1 60%;
-        order: 2;
         box-shadow: 10px black;
     }
 
-    #main > nav2 {
-        margin: 0px;
-        padding: 0px;
-        background: #cca536;
-        flex: 1 6 10%;
-        order: 1;
-        text-align: center;
-    }
 
-nav2 > a:link, a:visited {
-    background-color: #4a4d99;
-    color: white;
-    padding: 20px 25px;
+/*footer starts here*/
+
+.footer-distributed{
+	background-color: #4a4d99;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+    padding: 55px 50px;
+	
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #cca536;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about img{
+    height: 80px;
+    width: 180px;
+	margin: 0px;
+    margin-left: -60px;
+}
+
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 50px;
-    width: 100px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+/* If you don't want the footer to be responsive, remove these media queries */
 
-nav2 > a:hover, a:active {
-    background: rgba(255,255,255,0.2);
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
 
-    #main > aside {
-        background: #cca536;
-        margin: 0px;
-        padding: 0px;
-        flex: 1 6 10%;
-        order: 3;
-    }
+footer h3 {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    text-shadow: 2px 2px #cca536;
+}
 
-    #mainAboutpage {
-        min-height: 800px;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-flow: row;
-        margin-top: -6px;
-    }
-
-   #one {
-        margin: 0px;
-        padding: 0px;
-        background: #dddd88;
-        flex: 3 1 60%;
-        order: 2;
-    }
 
 
 footer {
