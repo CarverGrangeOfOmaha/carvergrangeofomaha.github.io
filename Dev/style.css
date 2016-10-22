@@ -17,6 +17,7 @@ body {
     width: 100%;
     height: 20vh;
     z-index: -1;
+    background-color: red;
 }
 
 nav {
@@ -227,14 +228,17 @@ h2#titleName {
     line-height: 20px;
     margin-top: 3%;
 }
-
-p#paraInfo {
-    margin-top: 40px;
-    width: 700px;
-    margin-left: 25%;
+#image2 {
+    max-width: 100%;
+    margin-left: -60px;
+    float: left;
+}
+#paraInfo2 {
     padding: 0px;
     font-family: serif;
     font-size: 1.3em;
+    color: black;
+    text-align: center;
 }
 
 #image1 {
@@ -255,19 +259,6 @@ h3#titleName {
     line-height: 20px;
     margin-top: 15%
 }
-#image2 {
-    max-width: 100%;
-    margin-left: -60px;
-    float: left;
-}
-p#paraInfo2 {
-    margin-top: 40vh;
-    margin-left: 40%;
-    padding: 0px;
-    font-family: serif;
-    font-size: 1.1em;
-}
-
 
 p#paraInfo3 {
     margin-top: 450px;
