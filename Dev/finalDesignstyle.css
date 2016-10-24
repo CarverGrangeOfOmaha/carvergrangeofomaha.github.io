@@ -17,6 +17,14 @@
 	margin: 0 auto;
 }
 
+#logo {
+    height: 7vh;
+    top:8px;;
+    position: absolute;
+    left: 320px;
+    margin-left: 2vw;
+}
+
 /*	The header placeholder. It is displayed when the header is fixed to the top of the
 	browser window, in order to prevent the content of the page from jumping up. */
 
@@ -29,7 +37,7 @@
 
 .header-fixed .header-limiter h1 {
 	float: left;
-	font: normal 36px Cookie, Arial, Helvetica, sans-serif;
+	font: normal 36px 'Cookie', Arial, Helvetica, sans-serif;
 	line-height: 40px;
     margin: 0;
     text-shadow: 2px 2px #cca536;
@@ -296,6 +304,7 @@ i {
 /*BEGINNING OF FOOTER*/
 
 .footer-distributed{
+    
 	background-color: #4a4d99;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -323,10 +332,11 @@ i {
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: normal 36px 'Cookie', Arial, Helvetica, sans-serif;
 	margin: 0;
     text-shadow: 2px 2px #cca536;
 }
+
 
 .footer-distributed h3 span{
 	color:  #cca536;
