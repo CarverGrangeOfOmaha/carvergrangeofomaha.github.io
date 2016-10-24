@@ -1,3 +1,11 @@
+#logo {
+    height: 5vh;
+    float: left;
+    margin-top: -12px;
+    margin-left: 20px;
+}
+
+
 .header-fixed {
 	background-color:#4a4d99;
 	box-shadow:0 1px 1px #ccc;
@@ -15,14 +23,6 @@
 	max-width: 1200px;
 	text-align: center;
 	margin: 0 auto;
-}
-
-#logo {
-    height: 7vh;
-    top:8px;;
-    position: relative;
-    left: 320px;
-    margin-left: 2vw;
 }
 
 /*	The header placeholder. It is displayed when the header is fixed to the top of the
@@ -51,14 +51,6 @@
 .header-fixed .header-limiter h1 span {
 	color: #cca536 ;
     text-shadow: 2px 2px white;
-}
-
-#logo {
-    height: 7vh;
-    top:8px;;
-    position: absolute;
-    left: 320px;
-    margin-left: 2vw;
 }
 
 /* The navigation links */
@@ -92,14 +84,6 @@
 	opacity: 1;
 }
 
-#logo {
-    height: 5vh;
-    top:8px;;
-    position: absolute;
-    left: 320px;
-    margin-left: 2vw;
-}
-
 /* Fixed version of the header */
 
 body.fixed .header-fixed {
@@ -126,32 +110,7 @@ body.fixed .header-fixed .header-limiter nav {
 	font-size: 13px;
 }
 
-
-/*SOCIAL MEDIA*/
-#fbox {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border: 2px solid #4a4d99;
-    border-radius: 50px;
-    color: black;
-}
-.fa-facebook {
-    font-size: 4em;
-    padding-left: 25px;
-    line-height: 5vh;
-    z-index: -2;
-}
-#fbox:hover {
-    background-color: rgb(59, 89, 152);
-    color: white;
-}
-
-/*END OF SOCIAL MEDIA*/
-
-
-/* Making the header responsive */
+/* RESPONSIVE HEADER */
 
 @media all and (max-width: 600px) {
 
@@ -180,25 +139,11 @@ body.fixed .header-fixed .header-limiter nav {
 	body.fixed .header-fixed {
 		display: none;
 	}
-    
-    #logo {
-        height: 4vh;
-        top:8px;;
-        position: rel;
-        left: 10px;
-        margin-left: 80vw;
-    }
+
 
 }
 
-/*
-	 We are clearing the body's margin and padding, so that the header fits properly.
-	 We are also adding a height to demonstrate the scrolling behavior. You can remove
-	 these styles.
- */
-
-
-/*BEGINNING OF JUMBOTRON*/
+/* BEGINNING OF BODY */
 
 body {
     background: #cca536;
@@ -208,6 +153,8 @@ body {
     
 }
 
+/* HERO */
+
 video {
     min-width: 100%;
 
@@ -215,31 +162,91 @@ video {
 
 }
 
-#transparent1 {
-    width: 80%;
-    height: 60vh;
-    margin-top: 11vh;
-    margin-left: 7vw;
+.overlay img {
+    opacity: 0.4;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    height: 60%;
+    width: 81%;
     position: absolute;
-    background: rgba(255,255,255,0.2);
-    font-family: sans-serif;
+    margin-top: -70vh;
+    margin-left: 150px;
     border-radius: 10px;
+    
 }
 
-img#aboutpage {
-    float: right;
+.hero2 {
+    position: absolute;
+    margin-top: -70vh;
+    margin-left: 10vw;
+    height: 60vh;
+    width: 80vw;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    font-family: sans-serif;
+    display: flex;
+    
+    
 }
 
-/*END OF JUMBOTRON*/
+.heroinside {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.heroinside h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5vw;
+    margin-left: 50px;
+}
+
+.heroinside h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5vw;
+    display: inline-block;
+    margin-left: 500px;
+    margin-top: -40px;
+    
+}
+
+.heroinside h3 {
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.heroinside h4 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vw;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* END OF HERO */
 
 
-/*BEGINNING OF BODY*/
+/* BEGINNING OF MAIN */
+
 .main {
     margin-top: -20px;
     background: rgba(204,165,54,0.2);
 }
 
 .maininside {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+}
+
+.maininside2 {
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -272,9 +279,17 @@ p {
     padding-left: 10px;
 }
 
+img#gwcarver {
+    float: left;
+    margin: 20px;
+}
+
+img#grangelogo {
+    float: right;
+}
+
 img#aboutpage {
     float: right;
-    margin: 20px;
 }
 
 img#aboutpage2 {
@@ -300,16 +315,28 @@ i {
         margin-right: 10px;
     }
     
+    .maininside2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
     img#aboutpage {
         width: 80%;
         height: 80%;
     }
+    
+    .main2 {
+    display: block;
+    margin-top: -700px;
+    background: rgba(204,165,54,0.2);
+    }
 }
 
-/*END OF BODY*/
+
+/* END OF BODY */
 
 
-/*BEGINNING OF FOOTER*/
+/* BEGINNING OF FOOTER */
 
 .footer-distributed{
     
@@ -450,7 +477,7 @@ i {
     text-decoration: none;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* RESPONSIVE FOOTER */
 
 @media (max-width: 880px) {
 
