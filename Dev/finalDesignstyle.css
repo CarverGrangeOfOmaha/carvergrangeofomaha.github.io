@@ -259,6 +259,12 @@ video {
 
 }
 
+h5#gwTitle {
+    width: 80vw;
+    
+    
+}
+
 h4#gw {
     width: 250px;
     margin-left: 865px;    
@@ -268,7 +274,7 @@ h4#gw {
     padding-left: 10px;
 }
 
-#head2 {
+#headGW2 {
     padding-left: 10px;
 }
 
@@ -289,13 +295,12 @@ img#grangelogo {
 }
 
 img#aboutpage {
-    float: right;
+    
 }
 
 img#aboutpage2 {
     float: left;
 }
-
 
 img#event1 {
     float: left;
@@ -308,6 +313,8 @@ img#event2 {
 i {
     text-decoration: underline;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .maininside {
@@ -329,6 +336,11 @@ i {
     display: block;
     margin-top: -700px;
     background: rgba(204,165,54,0.2);
+    }
+    
+    h5#gwTitle {
+    width: 80vw;
+    
     }
 }
 
