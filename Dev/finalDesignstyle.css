@@ -149,7 +149,7 @@ body {
     background: #cca536;
 	margin: 0;
 	padding: 0;
-	height: 1500px;
+	
     
 }
 
@@ -169,7 +169,7 @@ video {
     width: 81%;
     position: absolute;
     margin-top: -70vh;
-    margin-left: 150px;
+    margin-left: 10vw;
     border-radius: 10px;
     
 }
@@ -199,16 +199,16 @@ video {
 .heroinside h1 {
     color: white;
     font-family: sans-serif;
-    font-size: 5vw;
+    font-size: 6vh;
     margin-left: 50px;
 }
 
 .heroinside h2 {
     color: white;
     font-family: sans-serif;
-    font-size: 5vw;
+    font-size: 5vh;
     display: inline-block;
-    margin-left: 500px;
+    margin-left: 200px;
     margin-top: -40px;
     
 }
@@ -223,7 +223,7 @@ video {
 .heroinside h4 {
     color: white;
     font-family: sans-serif;
-    font-size: 3vw;
+    font-size: 3vh;
     display: inline-block;
     margin-left: 20px;
 }
