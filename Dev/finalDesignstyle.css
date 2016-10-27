@@ -280,12 +280,22 @@ h4#gw {
     font-family: Georgia;
 }
 
+#headabout {
+    padding-left: 20px;
+    font-family: Georgia;
+}
+
 #head2 {
     padding-left: 10px;
     font-family: Georgia;
 }
 
 #head3 {
+    padding-left: 10px;
+    font-family: Georgia;
+}
+
+#head3about {
     padding-left: 10px;
     font-family: Georgia;
 }
