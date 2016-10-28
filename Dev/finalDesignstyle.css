@@ -1,52 +1,45 @@
-#logo {
-    height: 5vh;
-    float: left;
-    margin-top: -12px;
-    margin-left: 20px;
+body .h1,body  .h2,body .h3,body h1,body h2,body h3{
+    margin: 0;
+    line-height: 5vh;
 }
-
 
 .header-fixed {
 	background-color:#4a4d99;
 	box-shadow:0 1px 1px #ccc;
-	padding: 20px 40px;
-	height: 80px;
+	height: 12vh;
 	color: #ffffff;
 	box-sizing: border-box;
-	top:-100px;
-
 	-webkit-transition:top 0.3s;
 	transition:top 0.3s;
 }
 
 .header-fixed .header-limiter {
-	max-width: 1200px;
-	text-align: center;
 	margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*	The header placeholder. It is displayed when the header is fixed to the top of the
 	browser window, in order to prevent the content of the page from jumping up. */
 
 .header-fixed-placeholder{
-	height: 100px;
+	height: 12vh;
 	display: none;
 }
 
 /* Logo */
 
 .header-fixed .header-limiter h1 {
-	float: left;
-	font: normal 36px Georgia, Arial, Helvetica, sans-serif;
-	line-height: 40px;
+    display: inline-block;
+	font: normal 4.5vh Georgia, Arial, Helvetica, sans-serif;
+	line-height: 12vh;
     margin: 0;
+    margin-left: 5vw;
+    text-align: left;
     text-shadow: 2px 2px #cca536;
+    white-space: nowrap;
 }  
-
-.header-fixed .header-limiter img {
-	float: left;
-    margin: 0;
-}
 
 .header-fixed .header-limiter h1 span {
 	color: #cca536 ;
@@ -60,10 +53,20 @@
 	text-decoration: none;
 }
 
+#mobileNav{
+    display: none;
+}
+
+#mobileNavScreen{
+    display: none;
+}
+
 .header-fixed .header-limiter nav {
-	font:16px Arial, Helvetica, sans-serif;
-	line-height: 20px;
-	float: right;
+	font:2.25vh Arial, Helvetica, sans-serif;
+	line-height: 12vh;
+    margin-right: 5vw;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .header-fixed .header-limiter nav a{
@@ -87,13 +90,13 @@
 /* Fixed version of the header */
 
 body.fixed .header-fixed {
-	padding: 10px 40px;
-	height: 60px;
+	height: 7.5vh;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
+    background-color: rgba(74,77,153, 0.9);
 }
 
 body.fixed .header-fixed-placeholder {
@@ -101,46 +104,88 @@ body.fixed .header-fixed-placeholder {
 }
 
 body.fixed .header-fixed .header-limiter h1 {
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 3.5vh;
+	line-height: 7.5vh;
 }
 
 body.fixed .header-fixed .header-limiter nav {
-	line-height: 28px;
-	font-size: 13px;
+	line-height: 7.5vh;
+	font-size: 2vh;
+    text-align: right;
 }
 
 /* RESPONSIVE HEADER */
 
-@media all and (max-width: 600px) {
-
-	.header-fixed {
-		padding: 20px 0;
-		height: 75px;
-	}
-
+@media all and (max-width: 1000px) {
+    body.fixed .header-fixed{
+        height: 12vh;
+    }
+    
+    
 	.header-fixed .header-limiter h1 {
-		float: none;
-		margin: -8px 0 6px;
 		text-align: center;
-		font-size: 24px;
-		line-height: 1;
+		font-size: 4vh;
+		line-height: 12vh;
 	}
 
 	.header-fixed .header-limiter nav {
-		line-height: 1;
-		float:none;
-	}
-
-	.header-fixed .header-limiter nav a {
-		font-size: 11px;
-	}
-
-	body.fixed .header-fixed {
 		display: none;
+        position: fixed;
+        top: 12vh;
+        line-height: 2.25vh;
+        width: 100%;
+        z-index: 3;
+        text-align: right;
 	}
-
-
+    
+    .header-fixed .header-limiter #mobileNavScreen{
+        display: none;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header-fixed .header-limiter nav a{
+        display: block;
+        padding: 2vh;
+        background-color: gray;
+        border-bottom: 1px solid black;
+    }
+    
+    .header-fixed .header-limiter nav a:hover{
+        background-color: darkgray;
+    }
+    
+    #mobileNav {
+		display: inline-block;
+        line-height: 10vh;
+        margin-right: 3vw;
+        padding: 1vw;
+        cursor: pointer;
+	}
+    
+    #mobileNav img{
+        height: 5vh;
+    }
+    
+    body.fixed .header-fixed .header-limiter h1{
+        line-height: 12vh;
+    }
+    
+    body.fixed .header-fixed .header-limiter nav{
+        display: none;
+    }
+    
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+    .indBox2 img{
+        width: 100%;
+    }
 }
 
 /* BEGINNING OF BODY */
@@ -157,35 +202,42 @@ body {
 
 video {
     min-width: 100%;
-
     width: 100%;
-
 }
 
-.overlay img {
-    opacity: 0.4;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    height: 60%;
-    width: 81%;
+#overlayWrapper{
     position: absolute;
-    margin-top: -70vh;
-    margin-left: 10vw;
+    width: 100%;
+    height: 55vw;
+    z-index: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10%;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    width: 80%;
+}
+
+.overlay img{
+    width: 100%;
     border-radius: 10px;
-    
 }
 
 .hero2 {
     position: absolute;
-    margin-top: -70vh;
-    margin-left: 10vw;
-    height: 60vh;
-    width: 80vw;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10%;
+    width: 80%;
+    height: 80%;
     font-family: sans-serif;
     display: flex;
-    
-    
+    color: rgba(234,233,211,1);
+    text-shadow: -1px -1px gray, 2px 2px black;
 }
 
 .heroinside {
@@ -195,44 +247,40 @@ video {
     padding: 20px;
     width: 80vw;
     flex-direction: column;
+    text-align: center;
+    font-family: Georgia;
+    line-height: 5vh;
+}
+
+#heroTextWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
 }
 
 .heroinside h1 {
-    color: white;
-    font-family: Georgia;
     font-size: 6vh;
-    text-align: center;
 }
 
 .heroinside h2 {
-    color: white;
-    font-family: Georgia;
     font-size: 5vh;
-    text-align: center;
-    margin-top: -20px;
-    
 }
 
 .heroinside h3 {
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: -10px;
+    font-size: 3vh;
 }
 
 .heroinside h4 {
-    color: white;
     font-family: sans-serif;
     font-size: 2.5vh;
     margin-left: 20px;
-    text-align: center;
 }
 
 .heroinside h5 {
-    color: white;
     font-family: sans-serif;
-    font-size: 1.5vh;
-    text-align: center;
+    font-size: 2vh;
 }
 
 /* END OF HERO */
@@ -275,24 +323,9 @@ h4#gw {
     margin-left: 865px;    
 }
 
-#head {
-    padding-left: 10px;
-    font-family: Georgia;
-}
-
 #headabout {
-    width: 4
+    width: 4;
     padding-left: 20px;
-    font-family: Georgia;
-}
-
-#head2 {
-    padding-left: 10px;
-    font-family: Georgia;
-}
-
-#head3 {
-    padding-left: 10px;
     font-family: Georgia;
 }
 
@@ -318,15 +351,6 @@ p {
     padding-left: 10px;
 }
 
-img#gwcarver {
-    float: left;
-    margin: 20px;
-}
-
-img#grangelogo {
-    float: right;
-}
-
 img#aboutpage {
     
 }
@@ -348,7 +372,7 @@ i {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     
     .maininside2 {
         margin-left: 10px;
@@ -361,14 +385,22 @@ i {
     }
     
     .main2 {
-    display: block;
-    margin-top: -700px;
-    background: rgba(204,165,54,0.2);
+        display: block;
+        margin-top: -700px;
+        background: rgba(204,165,54,0.2);
     }
     
     h5#gwTitle {
-    width: 80vw;
+        width: 80vw;
+    }
+
+    .heroinside #head, .heroinside #head2, .heroinside #head3{
+        display: inline-block;
+        padding-left: 1vw;
+    }
     
+    .heroinside #head, .heroinside #head2{
+        font-size: 6vh;
     }
 }
 
@@ -428,11 +460,12 @@ i {
     justify-content: center;
 }
 
+#logoWrapper{
+    text-align: center;
+}
 
-
-#image1 {
+.image1 {
     max-width: 100%;
-    float: left;
 }
 
 /* END OF FLEXBOX */
@@ -579,10 +612,24 @@ i {
     text-decoration: none;
 }
 
+@media (max-width: 700px) {
+    .heroinside h5{
+        display: none;
+    }
+}
+
 /* RESPONSIVE FOOTER */
 
-@media (max-width: 880px) {
+@media (max-width: 1200px) {
 
+    .header-fixed .header-limiter h1{
+        margin-left: 1vw;
+    }
+    
+    .header-fixed .header-limiter nav{
+        margin-right: 1vw;
+    }
+    
 	.footer-distributed{
 		font: bold 14px Georgia;
 	}

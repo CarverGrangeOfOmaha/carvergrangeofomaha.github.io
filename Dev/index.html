@@ -26,9 +26,13 @@
     <body>
         <header class="header-fixed">
             <div class="header-limiter">
-                <h1><a href="#">Carver Grange<span> of Omaha</span></a></h1>
+                <h1><a href="index.html">Carver Grange<span> of Omaha</span></a></h1>
                 
-
+                <div id="mobileNav">
+                    <img src="mobileNav.png" />
+                </div>
+                <div id="mobileNavScreen">
+                </div>
                 <nav>
                     <a href="index.html" class="selected">Home</a>
                     <a href="join.html">Join</a>
@@ -37,35 +41,27 @@
                     <a href="4hclub.html">4-H Club</a>
                     <a href="gwCarver.html">Dr. Carver</a>
                     <a href="contactus.html">Contact</a>
-
                 </nav>
             </div>
         </header>
 
         <div class="header-fixed-placeholder"></div>
-
-        <!-- Jumbotron -->
-        
-            <video autoplay="true" loop>
-            <source src="video.mp4" type="video/mp4"></video>
+        <div id="overlayWrapper">
             <div class="overlay"><img src="urbhusbandry2.jpg" /></div>
-
-
             <div class="hero2">
                 <div class="heroinside">
-                    <h1 id="head"><strong>Carver Grange</strong><br /><h2 id="head2">of Omaha</h2><h3 id="head3">(CarGO)</h3></h1>
-                    <br />
-                    <br />
-                    <br />
-                    <h4>Education. Leadership. Development. Community Engagement. Husbandry.</h4>
-                    <h5>Teaching the youth of today, the importance of bringing farming to the urban setting of tomorrow.</h5>
+                    <div id="heroTextWrapper">
+                        <h1 id="head">Carver Grange</h1><h2 id="head2">of Omaha</h2><h3 id="head3">(CarGO)</h3>
+                        <br />
+                        <h4>Education. Leadership. Development. Community Engagement. Husbandry.</h4>
+                        <h5>Teaching the youth of today, the importance of bringing farming to the urban setting of tomorrow.</h5>
+                    </div>
                 </div>
             </div>
-
-
-
-
-        <!-- END OF JUMBOTRON -->
+        </div>
+        <video autoplay="true" loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
 
         <!-- BEGINNING OF MAIN BODY -->    
 
@@ -74,8 +70,10 @@
                 <div class="mainBox">
                     <div class="back3">
                         <div class="indBox">
-                            <img id="image1" src="cglogo2.png"/>
-                            <h1 id="head">Carver Grange of Omaha (CarGO)</h1>
+                            <div id="logoWrapper">
+                                <img class="image1" src="cglogo2.png"/>
+                                <h1 id="head">Carver Grange of Omaha (CarGO)</h1>
+                            </div>
                             <h3 id="head3a">The George Washington Carver Grange of Omaha was established with the primary purpose to expand hands-on STEM (Science, Technology, Engineering and Mathematics) education and develop transferable leadership skills in youth while cultivating an interest in food and related agriculture education opportunities and careers..</h3>
                         </div>
                     </div>
@@ -86,13 +84,13 @@
                 
                     <div class="flex-container">
                         <div class="indBox2">
-                            <img id="image1" src="about%20photo%201.JPG"/>
+                            <img class="image1" src="about%20photo%201.JPG"/>
                         </div>
                         <div class="indBox2">
-                            <img id="image1" src="State%20Convention.jpg"/>
+                            <img class="image1" src="State%20Convention.jpg"/>
                         </div>
                         <div class="indBox2">
-                            <img id="image1" src="USDA%20secretary%20espy.jpg"/>
+                            <img class="image1" src="USDA%20secretary%20espy.jpg"/>
                         </div>
                      </div>
     
@@ -194,7 +192,7 @@
         </script>
 
 
-
+        <script src="carver.js"></script>
     </body>
 
 </html>
