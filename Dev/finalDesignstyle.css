@@ -55,6 +55,7 @@ body .h1,body  .h2,body .h3,body h1,body h2,body h3{
 
 #mobileNav{
     display: none;
+    z-index: 5;
 }
 
 #mobileNavScreen{
@@ -140,7 +141,7 @@ body.fixed .header-fixed .header-limiter nav {
     
     .header-fixed .header-limiter #mobileNavScreen{
         display: none;
-        z-index: 2;
+        z-index: 10;
         position: fixed;
         top: 0;
         left: 0;
