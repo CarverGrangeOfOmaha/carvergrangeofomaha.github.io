@@ -294,6 +294,7 @@ video {
 }
 
 .maininside {
+    min-height: 43vh;
     margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -332,6 +333,7 @@ h4#gw {
 #head3about {
     padding-left: 10px;
     font-family: Georgia;
+    text-align: left;
 }
 
 #head h2 {
@@ -474,7 +476,6 @@ i {
 /* BEGINNING OF FOOTER */
 
 .footer-distributed{
-    
 	background-color: #4a4d99;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -573,9 +574,14 @@ i {
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+footer a{
+	color:  white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color:  white;
+	text-decoration: underline;
 }
 
 
@@ -665,4 +671,16 @@ footer {
         font-family: Georgia;
         font-size: 1em;
         text-align: center;    
+}
+
+.joe{
+    padding-left: 5vw;
+}
+
+.mainBox{
+    margin-bottom: 5vh;
+}
+
+.indBox{
+    text-align: center;
 }
