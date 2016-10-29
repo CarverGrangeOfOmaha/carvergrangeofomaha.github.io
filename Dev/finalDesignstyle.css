@@ -135,7 +135,7 @@ body.fixed .header-fixed .header-limiter nav {
         top: 12vh;
         line-height: 2.25vh;
         width: 100%;
-        z-index: 3;
+        z-index: 11;
         text-align: right;
 	}
     

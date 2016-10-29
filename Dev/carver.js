@@ -1,9 +1,9 @@
-$("#mobileNav").click(function(){
+$("#mobileNav").on("click touch", function(){
     $("nav").show();
     $("#mobileNavScreen").show();
 });
 
-$("#mobileNavScreen").click(function(){
+$("#mobileNavScreen").on("click touch", function(){
     $("nav").hide();
     $("#mobileNavScreen").hide();
 });
