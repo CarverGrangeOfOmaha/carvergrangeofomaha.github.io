@@ -1,5 +1,4 @@
 $("#mobileNav").on("click touch", function(){
-    $(".main").prepend("<div>click fired</div>");
     $("#nav").show();
     $("#test").show();
     $("#mobileNavScreen").show();
