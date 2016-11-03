@@ -59,7 +59,7 @@ body .h1,body  .h2,body .h3,body h1,body h2,body h3{
 }
 
 #mobileNavScreen{
-    background-color: black;
+    background-color: rgba(0,0,0,0.2);
     display: none;
     z-index: 10;
     position: fixed;
@@ -75,6 +75,7 @@ body .h1,body  .h2,body .h3,body h1,body h2,body h3{
     margin-right: 5vw;
     display: inline-block;
     white-space: nowrap;
+    z-index: 11;
 }
 
 .header-fixed .header-limiter nav a{
