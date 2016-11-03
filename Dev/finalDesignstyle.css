@@ -60,6 +60,12 @@ body .h1,body  .h2,body .h3,body h1,body h2,body h3{
 
 #mobileNavScreen{
     display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .header-fixed .header-limiter nav {
@@ -138,16 +144,6 @@ body.fixed .header-fixed .header-limiter nav {
         z-index: 11;
         text-align: right;
 	}
-    
-    .header-fixed .header-limiter #mobileNavScreen{
-        display: none;
-        z-index: 10;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
     
     .header-fixed .header-limiter nav a{
         display: block;
