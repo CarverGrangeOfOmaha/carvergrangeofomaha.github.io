@@ -140,7 +140,7 @@ body.fixed .header-fixed .header-limiter nav {
 	.header-fixed .header-limiter nav {
 		display: none;
         position: fixed;
-        top: 30vh;
+        top: 12vh;
         line-height: 2.25vh;
         width: 100%;
         z-index: 11;
